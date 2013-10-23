@@ -1,0 +1,24 @@
+{
+  "name": "hn",
+  "version": "0.0.0",
+  "description": "A command line tool to print out the latest posts on Hacker News to your terminal.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mtharrison/hackernews.git"
+  },
+  "author": "Matt Harrison <mt.harrison86@gmail.com>",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/mtharrison/hackernews/issues"
+  },
+  "dependencies": {
+    "request": "~2.27.0",
+    "feedparser": "~0.16.2",
+    "colors": "~0.6.2",
+    "prompt": "~0.2.11"
+  }
+}
