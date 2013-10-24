@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var FeedParser = require('feedparser')
   , request = require('request')
   , posts = []

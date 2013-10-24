@@ -1,10 +1,13 @@
 {
-  "name": "hn",
+  "name": "hacker-news-cli",
   "version": "0.0.0",
   "description": "A command line tool to print out the latest posts on Hacker News to your terminal.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "hn": "./index.js"
   },
   "repository": {
     "type": "git",
