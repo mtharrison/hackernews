@@ -20,7 +20,7 @@ Before installation you will need node/npm installed.
     
 ##Usage
 
-The global installation will symlink an executable script and place it in your PATH. To use simple type:
+The global installation will symlink an executable script and place it in your PATH. To use simply type:
 
     hn
     
