@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "hn": "./index.js"
+    "hn": "./index.js",
+    "dn": "./designer.js"
   },
   "repository": {
     "type": "git",
