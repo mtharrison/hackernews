@@ -24,4 +24,8 @@ The global installation will symlink an executable script and place it in your P
 
     hn
     
+or
+
+    dn
+    
 You will then be prompted to open a post. Type the number of the post to open a post or type 0 to quit and return to your terminal session.
