@@ -20,11 +20,11 @@ Before installation you will need node/npm installed.
     
 ##Usage
 
-The global installation will symlink an executable script and place it in your PATH. To use simply type:
+The global installation will symlink an executable script and place it in your PATH. To use with hacker news simply type:
 
     hn
     
-or
+or for designer news:
 
     dn
     
@@ -33,4 +33,5 @@ You will then be prompted to open a post. Type the number of the post to open a 
 Version history
 
 0.1.0 - `stephenway` added dn command
+
 0.2.0 - Support for Windows and Linux added
