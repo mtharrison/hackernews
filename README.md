@@ -30,7 +30,7 @@ or for designer news:
     
 You will then be prompted to open a post. Type the number of the post to open a post or type 0 to quit and return to your terminal session.
 
-Version history
+##Version history
 
 0.1.0 - `stephenway` added dn command
 
