@@ -41,10 +41,13 @@ function promptForPost() {
 
   prompt.get(schema, function (err, result) {
     if(result.post !== "0"){
-      childProcess.exec("open " + posts[parseInt(result.post) - 1].link);
+      var i = parseInt(result.post);
+      if(isNaN(i) || i > posts.length || i < 1) {
+        console.log("Invalid post number");
+      } else {
+        childProcess.exec("open " + posts[i - 1].link);
+      }
       promptForPost();
     }
   });
-
-
 }
