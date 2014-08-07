@@ -29,3 +29,8 @@ or
     dn
     
 You will then be prompted to open a post. Type the number of the post to open a post or type 0 to quit and return to your terminal session.
+
+Version history
+
+0.1.0 - `stephenway` added dn command
+0.2.0 - Support for Windows and Linux added
