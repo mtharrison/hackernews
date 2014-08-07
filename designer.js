@@ -5,8 +5,15 @@ var FeedParser = require('feedparser')
   , posts = []
   , colors = require('colors')
   , prompt = require('prompt')
-  , childProcess = require('child_process')
+  , exec = require('child_process').exec
+  , platform = require('os').platform()
   , i = 1;
+
+const shellOpenCommand = {
+  'win32': 'start ',
+  'linux': 'xdg-open ',
+  'darwin': 'open '
+}[platform];
 
 request('https://news.layervault.com/?format=rss')
   .pipe(new FeedParser())
@@ -45,7 +52,7 @@ function promptForPost() {
       if(isNaN(i) || i > posts.length || i < 1) {
         console.log("Invalid post number");
       } else {
-        childProcess.exec("open " + posts[i - 1].link);
+        exec(shellOpenCommand + posts[i - 1].link);
       }
       promptForPost();
     }
