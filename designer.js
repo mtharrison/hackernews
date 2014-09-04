@@ -22,10 +22,10 @@ request('https://news.layervault.com/?format=rss')
   })
   .on('readable', function () {
     var stream = this, item;
-    if(i < 16){
+    if(i < 29){
       while (item = stream.read()) {
       posts.push(item);
-      console.log(i.toString().red + ". " + item.title);
+      console.log(i.toString().blue + ". " + item.title);
       i++;
     }
     }
