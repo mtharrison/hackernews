@@ -22,7 +22,7 @@ request('https://news.ycombinator.com/rss')
   })
   .on('readable', function () {
     var stream = this, item;
-    if(i < 16){
+    if(i < 29){
       while (item = stream.read()) {
       posts.push(item);
       console.log(i.toString().red + ". " + item.title);
