@@ -15,7 +15,7 @@ const shellOpenCommand = {
   'darwin': 'open '
 }[platform];
 
-request('https://news.layervault.com/?format=rss')
+request('https://www.designernews.co/?format=rss')
   .pipe(new FeedParser())
   .on('error', function(error) {
     console.log("An error occured");
