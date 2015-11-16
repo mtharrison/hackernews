@@ -47,6 +47,9 @@ function promptForPost() {
   };
 
   prompt.get(schema, function (err, result) {
+
+    if( !result || !result.post ) return console.log('\r');
+
     if(result.post !== "0"){
       var i = parseInt(result.post);
       if(isNaN(i) || i > posts.length || i < 1) {
